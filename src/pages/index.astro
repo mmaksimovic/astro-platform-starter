@@ -10,11 +10,14 @@ Netlify supports not only [Streaming SSR](https://docs.astro.build/en/guides/ser
 Any page or data can be rebuilt only when needed, without site visitors ever getting a performance hit.
 `;
 ---
-<Layout title="Welcome to Astro.">
-    <ContextAlert class="mb-8" />
-    <h1 class="mb-10">Netlify Platform Starter for Astro</h1>
-    <Markdown content={explainer} class="mb-10 text-lg" />
-    <p>
-        <a href="https://docs.netlify.com/frameworks/astro/" class="btn btn-lg sm:min-w-64">Read the Docs</a>
-    </p>
+<PostHogLayout>
+
+    <Layout title="Welcome to Astro.">
+        <ContextAlert class="mb-8" />
+        <h1 class="mb-10">Netlify Platform Starter for Astro</h1>
+        <Markdown content={explainer} class="mb-10 text-lg" />
+        <p>
+            <a href="https://docs.netlify.com/frameworks/astro/" class="btn btn-lg sm:min-w-64">Read the Docs</a>
+        </p>
 </Layout>
+
