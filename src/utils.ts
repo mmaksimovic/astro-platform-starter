@@ -1,9 +1,10 @@
 import blobshape from 'blobshape';
 import { uniqueNamesGenerator, adjectives, animals } from 'unique-names-generator';
+import { getNetlifyContext as getContext, isUploadDisabled } from './env';
 
 // Note: this only works on the server side
 export function getNetlifyContext() {
-    return process.env.CONTEXT;
+    return getContext();
 }
 
 export function randomInt(min: number, max: number) {
@@ -54,4 +55,4 @@ export function cacheHeaders(maxAgeDays = 365, cacheTags?: string[]): Record<str
     return headers;
 }
 
-export const uploadDisabled = import.meta.env.PUBLIC_DISABLE_UPLOADS?.toLowerCase() === 'true';
+export const uploadDisabled = isUploadDisabled();
