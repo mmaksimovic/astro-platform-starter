@@ -4,6 +4,12 @@
     "exclude": ["dist"],
     "compilerOptions": {
         "jsx": "react-jsx",
-        "jsxImportSource": "react"
+        "jsxImportSource": "react",
+        "strict": true,
+        "strictNullChecks": true,
+        "noUncheckedIndexedAccess": true,
+        "noImplicitReturns": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true
     }
 }
