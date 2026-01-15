@@ -1,5 +1,30 @@
 # Required Installation Steps
 
+## ESLint (Step 2.1)
+
+Before running linting, please install the ESLint dependencies:
+
+```bash
+npm install --save-dev eslint@^9 @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-plugin-astro eslint-plugin-jsx-a11y
+```
+
+These dependencies are required for:
+- `eslint@^9` - Core ESLint linter with flat config support
+- `@typescript-eslint/parser` - TypeScript parsing for ESLint
+- `@typescript-eslint/eslint-plugin` - TypeScript-specific linting rules
+- `eslint-plugin-astro` - Astro file linting support
+- `eslint-plugin-jsx-a11y` - Accessibility rules for JSX/React
+
+After installation, run linting with:
+```bash
+npm run lint
+```
+
+To automatically fix issues:
+```bash
+npm run lint:fix
+```
+
 ## Unit and Component Tests
 
 Before running the unit and component tests, please install the following React Testing Library dependencies:

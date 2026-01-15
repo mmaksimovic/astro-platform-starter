@@ -8,6 +8,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
+    "lint": "eslint . --ext .js,.ts,.tsx,.astro",
+    "lint:fix": "eslint . --ext .js,.ts,.tsx,.astro --fix",
     "test": "vitest",
     "test:ui": "vitest --ui",
     "test:coverage": "vitest --coverage",
